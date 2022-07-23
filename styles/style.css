@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    background-color: black;
+}
+body{
+    background-color: white;
+}
+.half-width{
+    color: white;
+}
+.half-width{
+    width: 50%;
+    padding-left: 2%;
+    
+    
+}
+.half-width img{
+    width: 50%;
+}
+.btn{
+   background-color: red; 
+}
+.players{
+    margin-top: 50px;
+    display: flex;
+    }
+    
+    
+button{
+    display: block;
+}
+
+
+.dd{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+footer h2{
+     
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.data{
+    text-align: center;
+   
+}
+.contact{
+    margin-right: 10px;
+}
+.service{
+    margin-right: 10px;
+}
+.privacy{
+    margin-right: 10px;
+}
+.settings{
+    margin-right: 10px;
+}
+.app{
+    margin-right: 10px;
+}
+.live{
+    margin-right: 10px;
+}
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width:100%}
+
+        .half-width,.players,.box-btn{
+            grid-template-columns:repeat(1, 1fr);
+        }
+        .player{
+            flex-direction: column;
+        }
+    
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+
+    }
+    .players{
+        width: 100%;
+    }
+    grid-template-columns: repeat(2, 1fr);
+}
